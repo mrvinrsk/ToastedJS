@@ -1,0 +1,16 @@
+{
+  "name": "toasted",
+  "version": "1.0.0",
+  "description": "A simple and configurable JS Framework for creating toast messages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "toast",
+    "framework"
+  ],
+  "author": "mrvinrsk",
+  "license": "ISC"
+}

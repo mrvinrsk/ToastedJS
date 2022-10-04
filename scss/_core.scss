@@ -1,0 +1,27 @@
+@use "config";
+
+.toasted-container {
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  max-width: 100%;
+  transition-duration: .25s;
+
+  @media screen and (min-width: config.$bp-tablet) {
+    max-width: 350px;
+  }
+
+  @media screen and (min-width: config.$bp-desktop) {
+    max-width: 550px;
+  }
+
+  @media screen and (min-width: config.$bp-desktop-large) {
+    max-width: 750px;
+  }
+
+  .toast {
+    width: 100%;
+  }
+}
