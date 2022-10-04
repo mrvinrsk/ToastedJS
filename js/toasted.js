@@ -47,7 +47,7 @@ const toast_defaults = {
     debug: false
 }
 
-function toasted(options = toast_defaults) {
+function untoasted(options = toast_defaults) {
     let warnings = [];
     let debug = [];
     let toast_timeout = null;
@@ -134,7 +134,7 @@ function toasted(options = toast_defaults) {
     }
 
     // add warning to console if autoClose is enabled but no delay or a delay smaller than the needed time to read the toast (300 words per minute) is set
-    let needed_delay = options.content.split(' ').length / 300 * 150000;
+    let needed_delay = options.content.split(' ').length / 300 * 175000;
     debug.push("This toast will most likely need its reader " + needed_delay + "ms to read it.");
 
     if (options.autoClose.autoAdjust.enabled) {
@@ -230,7 +230,6 @@ function toasted(options = toast_defaults) {
     toast.addEventListener('mouseenter', () => {
         if (options.autoClose.enabled) {
             running = false;
-            leftTime = options.autoClose.delay;
         }
 
         if (options.onMouseEnter) {
