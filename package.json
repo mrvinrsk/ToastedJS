@@ -1,6 +1,6 @@
 {
-  "name": "toasted",
-  "version": "1.0.0",
+  "name": "untoasted",
+  "version": "1.0.2",
   "description": "A simple and configurable JS Framework for creating toast messages.",
   "main": "index.js",
   "scripts": {
@@ -12,5 +12,6 @@
     "framework"
   ],
   "author": "mrvinrsk",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": "untoastedJS"
 }
